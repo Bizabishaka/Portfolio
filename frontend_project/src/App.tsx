@@ -207,7 +207,7 @@ const App: React.FC = () => {
         <section>
           <div>
             <h1 className="text-4xl font-bold mb-4 text-gray-900">🚀 Career Goals:</h1>
-            <ul class="list-disc list-inside space-y-2 pl-5">
+            <ul className="list-disc list-inside space-y-2 pl-5">
               <li>
               To master advanced React patterns and state management (Redux,
               Zustand).
@@ -228,7 +228,7 @@ const App: React.FC = () => {
             </ul>
 
             <h1 className="text-4xl font-bold mb-4 text-gray-9000">💻 Hard Skills:</h1>
-            <ul class="list-disc list-inside space-y-2 pl-5">
+            <ul className="list-disc list-inside space-y-2 pl-5">
               <li>
               Frontend: React.js, Vite, JavaScript (ES6+), TypeScript, HTML5, CSS3, TailwindCSS
             </li>
