@@ -94,6 +94,55 @@ const App: React.FC = () => {
     },
   ];
 
+  const CareerGoals = [
+    {
+      id: 1,
+      description: "Complete brand identity package for a tech startup",
+    },
+    {
+      id: 2,
+      description: "Interactive dashboard for complex data visualization",
+    },
+    {
+      id: 3,
+      description:
+        "Integrated social media marketing campaign for product launch",
+    },
+    {
+      id: 4,
+      description: "Complete brand identity package for a tech startup",
+    },
+    {
+      id: 5,
+      description: "Interactive dashboard for complex data visualization",
+    },
+    {
+      id: 6,
+      description:
+        "Integrated social media marketing campaign for product launch",
+    },
+  ];
+  const HardSkills = [
+    {
+      id: 1,
+      description: "Frontend: React.js, Vite, JavaScript (ES6+), TypeScript, HTML5,CSS3, TailwindCSS",
+    },
+    {
+      id: 2,
+      description: "Mobile: Flutter, Dart, Firebase Integration",
+    },
+    {
+      id: 3,
+      description:
+        "Tools: Git/GitHub, VS Code, Figma (Basic UI/UX Design), npm",
+    },
+    {
+      id: 4,
+      description: "Concepts: Responsive Design, REST APIs, State Management(Context API, Provider)",
+    },
+    
+  ];
+
   return (
     <div className="min-h-screen font-sans text-gray-800 bg-white">
       {/* Navigation */}
@@ -206,42 +255,26 @@ const App: React.FC = () => {
         </section>
         <section>
           <div>
-            <h1 className="text-4xl font-bold mb-4 text-gray-900">🚀 Career Goals:</h1>
+            <h1 className="text-4xl font-bold mb-4 text-gray-900">
+              🚀 Career Goals:
+            </h1>
             <ul className="list-disc list-inside space-y-2 pl-5">
-              <li>
-              To master advanced React patterns and state management (Redux,
-              Zustand).
-            </li>
-
-            <li>
-              Expand my expertise in cross-platform Flutter development for iOS
-              and Android.
-            </li>
-            <li>
-              Contribute to open-source projects and collaborate with innovative
-              tech teams.
-            </li>
-            <li>
-              Eventually grow into a Full-Stack Developer by learning backend
-              technologies like Node.js or Firebase
-            </li>
+              {CareerGoals.map((CareerGoal) => (
+                <li key={CareerGoal.id}>
+                  {CareerGoal.description}
+                </li>
+              ))}
             </ul>
 
-            <h1 className="text-4xl font-bold mb-4 text-gray-9000">💻 Hard Skills:</h1>
+            <h1 className="text-4xl font-bold mb-4 text-gray-9000">
+              💻 Hard Skills:
+            </h1>
             <ul className="list-disc list-inside space-y-2 pl-5">
-              <li>
-              Frontend: React.js, Vite, JavaScript (ES6+), TypeScript, HTML5, CSS3, TailwindCSS
-            </li>
-
-            <li>
-              Mobile: Flutter, Dart, Firebase Integration
-            </li>
-            <li>
-              Tools: Git/GitHub, VS Code, Figma (Basic UI/UX Design), npm
-            </li>
-            <li>
-              Concepts: Responsive Design, REST APIs, State Management (Context API, Provider)
-            </li>
+              {HardSkills.map((HardSkill) => (
+                <li key={HardSkill.id}>
+                  {HardSkill.description}
+                </li>
+              ))}
             </ul>
           </div>
         </section>
